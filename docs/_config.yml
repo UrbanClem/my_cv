@@ -22,7 +22,7 @@ title: Alejandro Rodriguez
 email: ale.rdz.dev@gmail.com
 description: >- # >- this means to ignore newlines until next entry
 
-baseurl: "/cv"  # leave empty if deploying to user repo gh-pages # the subpath of your site, e.g. /blog. GitHub Pages baseurl (leave blank for user pages), or add the github repo if not using user.github.io
+baseurl: "/my_cv"  # leave empty if deploying to user repo gh-pages # the subpath of your site, e.g. /blog. GitHub Pages baseurl (leave blank for user pages), or add the github repo if not using user.github.io
 url: "https://urbanclem.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 github:  UrbanClem
