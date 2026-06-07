@@ -4,6 +4,3 @@
 layout: resume
 title: CV
 ---
-
-
-{% include resume.html %}
