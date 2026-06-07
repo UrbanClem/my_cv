@@ -1,0 +1,80 @@
+avatar:
+  enabled: false
+description: >-
+  Software Engineering student (B.S. expected 2027) and software developer with a Technical High School Diploma in Programming Analysis. Professional experience includes frontend and mobile development at YAA Internet, technical support at Compusof, and social service at Universidad de Colima's Dirección de Sistemas, where he began his web development career.
+
+  Currently developing an AI-driven thesis project on adaptive educational content generation using locally-hosted LLMs (Ollama) to personalize mathematics learning based on individual student assessment and learning styles.
+
+  Combines hands-on industry experience in web/mobile development, technical support (serving enterprise clients including Aeroméxico, Coppel, and Burger King), and early training in PHP/MySQL with academic research in AI personalization.
+
+  Proficient in Python, JavaScript/TypeScript, React, React Native, PHP, SQL, and Unity (C#). Fluent in Spanish and English (TOEFL ITP C1 certified). Passionate about building intelligent, user-adaptive systems that solve real-world problems.
+sections:
+  - title: Education
+    entries:
+      - title: "Universidad de Colima"
+        sub: "Bachelor's in Software Engineering (in progress)"
+        location: "Colima, Mexico"
+        dates: "2023 - Present"
+        bullets:
+            - "Expected graduation: 2027"
+            - "Relevant coursework: Data Structures, Web Development, Databases, Mobile Programming"
+
+      - title: "Universidad de Colima"
+        sub: "Technical High School Diploma - Programmer Analyst"
+        location: "Colima, Mexico"
+        dates: "2020 - 2023"
+        bullets:
+          - "Specialization in Programming and Systems Analysis"
+
+      - title: "TOEFL ITP"
+        sub: "English Proficiency Certification"
+        location: "ETS · C1 Level (Advanced)"
+        dates: "2025"  # Ajusta el año si es diferente
+        bullets:
+          - "Official TOEFL ITP certification validating English proficiency at CEFR C1 level"
+          - "Demonstrates advanced reading, listening, and grammar skills for professional environments"
+
+  - title: Experience
+    entries:
+      - title: "Web Development Trainee (Social Service) · Universidad de Colima"
+        sub: "Dirección de Sistemas"
+        location: "Colima, Mexico"
+        dates: "2022 - 2023"
+        bullets:
+          - "Completed 480+ hours of social service as requirement for high school diploma"
+          - "Developed and maintained institutional web portal modules serving university students and faculty"
+          - "Received training in HTML, CSS, JavaScript, PHP, and MySQL databases"
+          - "Performed maintenance on existing systems within the Dirección de Sistemas"
+          - "Conducted functionality and acceptance testing for web applications"
+          - "Collaborated with senior developers under the direction of M. en C. Juan Gabriel Cruz Pérez"
+      - title: "Frontend Web Developer & Mobile Developer · YAA Internet"
+        location: "Colima, Mexico"
+        dates: "2024 - 2025"
+        bullets:
+          - "Developed and maintained responsive frontend web applications improving user experience across desktop and mobile platforms"
+          - "Built React Native mobile solutions for internal company use, reducing manual processes by an estimated 30%"
+          - "Collaborated with cross-functional teams to deploy features on schedule"
+          - "Implemented frontend performance optimizations resulting in improved LCP by 35% (from 2.4s to 1.6s)"
+
+      - title: "Technical Support Specialist · Compusof"
+        location: "Colima, Mexico"
+        dates: "2025 - Present (On-Call)"
+        bullets:
+          - "Provided on-site server maintenance and computer repairs for enterprise clients including Aeroméxico, Coppel, and Burger King"
+          - "Diagnosed and resolved hardware/software issues, reducing avg downtime by 40% (4h → 2.4h)"
+          - "Deployed and configured servers ensuring business continuity for high-traffic environments"
+      
+  - title: Technical Skills
+    entries:
+      - title: "Programming Languages"
+        bullets:
+          - "Fluent in Python, C, C++, Java, JavaScript, TypeScript, SQL."
+          - "Experienced in Frontend development (React, React Native, HTML5, CSS3, JavaScript (ES6+), Responsive Design, Web Performance Optimization)"
+      - title: "Tools & Systems"  
+        bullets:
+          - "Git, GitHub, Docker, REST APIs, Figma (collaboration), VS Code"
+          - "Server maintenance, hardware diagnostics, network troubleshooting, Windows/Linux environments"
+      - title: "Soft Skills"
+        bullets: "Problem-solving under pressure · Fast learner · Client-facing communication · Time management (work + study + thesis)"
+      - title: "Languages"
+        bullets: "Spanish (native), English (native · TOEFL ITP certified C1)"

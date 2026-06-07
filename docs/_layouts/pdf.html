@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>{{ site.title }} - CV</title>
+
+  <style>
+    /* Estilos específicos para PDF */
+    body {
+      font-family: 'Helvetica', 'Arial', sans-serif;
+      font-size: 12px;
+      line-height: 1.4;
+      color: #000;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    h1 {
+      font-size: 24px;
+      margin-bottom: 5px;
+    }
+    h2 {
+      font-size: 18px;
+      border-bottom: 1px solid #333;
+      margin-top: 20px;
+    }
+    h3 {
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+    .entry {
+      margin-bottom: 15px;
+    }
+    .entry-header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 5px;
+    }
+    .entry-title {
+      font-weight: bold;
+    }
+    .entry-date {
+      color: #666;
+    }
+    .entry-location {
+      font-style: italic;
+      color: #666;
+      font-size: 11px;
+    }
+    ul {
+      margin-top: 5px;
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 3px;
+    }
+    .description {
+      margin-bottom: 20px;
+    }
+    @media print {
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .no-print {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    {{ content }}
+  </div>
+</body>
+</html>
