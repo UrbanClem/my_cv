@@ -3,7 +3,7 @@ entries:
     sub: "Universidad de Colima"
     location: "React · Tailwind CSS · React Router · REST API · MySQL · Docker"
     dates: "2026 - Present"
-    link: "https://github.com/educ-ucol-mx/educ-neutro"
+    link: "https://educ-estudiante.ucol.mx"
     bullets:
       - "Building Educ Neutro, a multi-institution (white-label) LMS used by Universidad de Colima (React 19, Vite, Tailwind, React Router)"
       - "Consumes the REST API with Axios + React Query; JWT auth and role-based access; MySQL data, Docker and Jenkins CI/CD"

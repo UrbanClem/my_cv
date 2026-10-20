@@ -166,7 +166,7 @@ layout: default
             <span class="cv-entry-institution">{{ e.title }}</span>{% if e.sub %}<span class="cv-entry-degree"><em>{{ e.sub }}</em></span>{% endif %}
             {% if e.link %}
             <div class="cv-project-link">
-                <a href="{{ e.link }}" target="_blank" rel="noopener noreferrer">github.com/{{ e.link | replace: "https://github.com/", "" }}</a>
+                <a href="{{ e.link }}" target="_blank" rel="noopener noreferrer">{{ e.link | remove_first: "https://" | remove_first: "http://" }}</a>
             </div>
             {% endif %}
         </div>

@@ -32,6 +32,13 @@ sections:
 
   - title: Experience
     entries:
+      - title: "Social Service · Web Developer · Universidad de Colima"
+        sub: "Educ Neutro (Dirección de Sistemas)"
+        location: "Colima, Mexico"
+        dates: "2026 - Present"
+        bullets:
+          - "Currently completing social service on Educ Neutro, a multi-institution (white-label) learning management platform for the university"
+          - "Contributes to frontend features (React) and consumes the REST API; works with MySQL data and Docker/Jenkins CI/CD"
       - title: "Web Development Trainee (Social Service) · Universidad de Colima"
         sub: "Dirección de Sistemas"
         location: "Colima, Mexico"
