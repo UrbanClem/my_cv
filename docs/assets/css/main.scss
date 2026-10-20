@@ -251,21 +251,9 @@ ul {
   body {
     color: #000;
     background: #fff;
-    font-size: 11pt;
-    margin: 0.5in;
   }
   .cv-header, .cv-entry {
     page-break-inside: avoid;
-  }
-  a {
-    color: #1a73e8 !important;
-    text-decoration: underline !important;
-    text-decoration-thickness: 1.5px;
-    text-underline-offset: 2px;
-    position: relative;
-  }
-  a:after {
-    content: '';
   }
   .cv-section-rule {
     border-top: 1.5px solid #000;

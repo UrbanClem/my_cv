@@ -44,34 +44,9 @@
             transform: scale(1.05);
         }
 
-        /* Estilos para impresión/PDF */
         @media print {
             .pdf-button {
                 display: none !important;
-            }
-            
-            body {
-                margin: 0;
-                padding: 0;
-                font-size: 11pt;
-            }
-            
-            a {
-                text-decoration: none;
-                color: black;
-            }
-            
-            @page {
-                margin: 1.5cm;
-                size: A4;
-            }
-            
-            h1, h2, h3 {
-                page-break-after: avoid;
-            }
-            
-            .entry, .section {
-                page-break-inside: avoid;
             }
         }
     </style>

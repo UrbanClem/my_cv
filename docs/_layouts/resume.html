@@ -109,7 +109,7 @@ layout: default
             <a href="https://instagram.com/{{ site.instagram }}">Instagram: https://instagram.com/{{ site.instagram }}</a>
             {% endif %}
             {% if site.orcid %}
-            <a href="https://orcid.org/{{ site.orcid }}">Instagram: https://orcid.org/{{ site.orcid }}</a>
+            <a href="https://orcid.org/{{ site.orcid }}">ORCID: https://orcid.org/{{ site.orcid }}</a>
             {% endif %}
         </div>
         {% if site.department %}
@@ -163,8 +163,7 @@ layout: default
     <div class="cv-entry">
         <div class="cv-entry-header">
         <div class="cv-entry-main">
-            <span class="cv-entry-institution">{{ e.title }}</span>{% if e.sub %}<span class="cv-entry-degree">,
-            <em>{{ e.sub }}</em></span>{% endif %}
+            <span class="cv-entry-institution">{{ e.title }}</span>{% if e.sub %}<span class="cv-entry-degree"><em>{{ e.sub }}</em></span>{% endif %}
             {% if e.link %}
             <div class="cv-project-link">
                 <a href="{{ e.link }}" target="_blank" rel="noopener noreferrer">github.com/{{ e.link | replace: "https://github.com/", "" }}</a>
@@ -195,7 +194,7 @@ layout: default
   document.addEventListener('DOMContentLoaded', function() {
     const bibliography = document.querySelector('.cv-section:last-of-type');
     if (bibliography) {
-      bibliography.innerHTML = bibliography.innerHTML.replace(/Aldeia, Guilherme Seidyo Imai/g, '<strong>Aldeia, Guilherme Seidyo Imai</strong>');
+      bibliography.innerHTML = bibliography.innerHTML.replace(/Rodriguez, Alejandro/g, '<strong>Rodriguez, Alejandro</strong>');
     }
   });
 </script>

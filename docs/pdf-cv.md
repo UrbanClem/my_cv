@@ -1,10 +1,10 @@
 ---
 layout: pdf
-title: CV - Tu Nombre
+title: CV - Alejandro Rodriguez
 permalink: /cv-pdf/
 ---
 
-# Tu Nombre Completo
+# {{ site.title }}
 ## Software Engineering Student
 
 {{ site.data.cv.description }}
@@ -14,43 +14,25 @@ permalink: /cv-pdf/
 
   {% for entry in section.entries %}
 ### {{ entry.title }}
-{% if entry.sub %}*{{ entry.sub }}*{% endif %}
   <div class="entry-header">
-    <span class="entry-title">{{ entry.title }}</span>
+    {% if entry.sub %}<span class="entry-title">{{ entry.sub }}</span>{% endif %}
     <span class="entry-date">{{ entry.dates }}</span>
   </div>
   {% if entry.location %}
   <div class="entry-location">{{ entry.location }}</div>
   {% endif %}
   {% if entry.bullets %}
-  <ul>
+    {% if entry.bullets.first %}
+<ul>
     {% for bullet in entry.bullets %}
     <li>{{ bullet }}</li>
     {% endfor %}
-  </ul>
-  {% endif %}
-  {% endfor %}
-{% endfor %}
-
-## Technical Skills
-
-{% for entry in site.data.cv.sections %}
-  {% if entry.title == "Technical Skills" %}
-    {% for skill in entry.entries %}
-### {{ skill.title }}
-      {% if skill.bullets %}
-        {% if skill.bullets.first %}
-<ul>
-  {% for bullet in skill.bullets %}
-  <li>{{ bullet }}</li>
-  {% endfor %}
 </ul>
-        {% else %}
-<p>{{ skill.bullets }}</p>
-        {% endif %}
-      {% endif %}
-    {% endfor %}
+    {% else %}
+<p>{{ entry.bullets }}</p>
+    {% endif %}
   {% endif %}
+  {% endfor %}
 {% endfor %}
 
 ## Projects

@@ -1,50 +1,141 @@
-/* assets/css/print.css - Versión universal */
+/* assets/css/print.css - Compact single-page version */
 @media print {
-    /* Ocultar botón */
-    .pdf-button {
+    /* Hide interactive elements */
+    .pdf-button,
+    .no-print,
+    button,
+    nav,
+    footer {
         display: none !important;
     }
-    
-    /* Reset básico */
-    * {
-        background: transparent !important;
-        color: black !important;
-        box-shadow: none !important;
-        text-shadow: none !important;
+
+    /* Compact base typography */
+    html, body {
+        margin: 0 !important;
+        padding: 0 !important;
+        max-width: none !important;
+        font-size: 8.5pt !important;
+        line-height: 1.12 !important;
+        color: #000 !important;
+        background: #fff !important;
     }
-    
-    body {
-        margin: 0;
-        padding: 20px;
-    }
-    
-    /* SOLUCIÓN UNIVERSAL: cualquier encabezado h1-h6 */
-    h1, h2, h3, h4, h5, h6 {
-        page-break-after: avoid !important;
-        page-break-inside: avoid !important;
-        break-after: avoid !important;
-        break-inside: avoid !important;
-    }
-    
-    /* Cualquier elemento de lista o bloque de contenido */
-    ul, ol, p, div, section, article {
-        page-break-inside: avoid !important;
-        break-inside: avoid !important;
-    }
-    
-    /* Para cualquier elemento que sea hijo directo de una sección */
-    section > *, div.section > * {
-        page-break-inside: avoid !important;
-    }
-    
-    /* Evitar que elementos queden huérfanos */
-    * {
-        orphans: 3 !important;
-        widows: 3 !important;
-    }
-    
+
+    /* Page setup */
     @page {
-        margin: 1.5cm;
-        size: A4;
+        margin: 0.8cm 1cm;
+        size: letter;
+    }
+
+    /* Header: minimal vertical footprint */
+    .cv-header {
+        margin-bottom: 0.35em !important;
+    }
+
+    .cv-name {
+        font-size: 1.35rem !important;
+        margin: 0 0 0.05em 0 !important;
+    }
+
+    .cv-contact,
+    .cv-affiliation {
+        font-size: 0.72rem !important;
+        margin: 0 !important;
+        line-height: 1.15 !important;
+    }
+
+    .cv-description {
+        width: 100% !important;
+        max-width: 100% !important;
+        font-size: 0.68rem !important;
+        line-height: 1.18 !important;
+        margin: 0.15em 0 0 0 !important;
+    }
+
+    .cv-description p {
+        margin: 0 0 0.15em 0 !important;
+    }
+
+    /* Sections and entries: remove almost all vertical padding */
+    .cv-section {
+        margin-bottom: 0.3em !important;
+    }
+
+    .cv-section-title {
+        font-size: 0.8rem !important;
+        margin: 0 !important;
+    }
+
+    .cv-section-rule {
+        border-top: 1px solid #000 !important;
+        margin: 0.02em 0 0.2em 0 !important;
+    }
+
+    .cv-entry {
+        margin-bottom: 0.18em !important;
+    }
+
+    .cv-entry-header {
+        margin-bottom: 0 !important;
+    }
+
+    .cv-entry-main,
+    .cv-entry-location,
+    .cv-entry-dates,
+    .cv-entry-gpa,
+    .cv-entry-bullets li,
+    .cv-entry-description {
+        font-size: 0.68rem !important;
+        line-height: 1.15 !important;
+    }
+
+    .cv-entry-dates {
+        margin-top: 0 !important;
+    }
+
+    .cv-entry-bullets {
+        margin: 0 !important;
+        padding-left: 1.1em !important;
+        list-style-type: disc !important;
+    }
+
+    .cv-entry-bullets li {
+        margin: 0 !important;
+    }
+
+    .cv-project-link {
+        font-size: 0.64rem !important;
+        margin: 0 !important;
+    }
+
+    /* Social links shown as plain text for print */
+    .cv-socials {
+        display: none !important;
+    }
+
+    .cv-socials-print {
+        display: block !important;
+        font-size: 0.68rem !important;
+        margin-top: 0.15em !important;
+    }
+
+    .cv-socials-print a {
+        display: inline !important;
+        margin: 0 0.6em 0 0 !important;
+    }
+
+    /* Links: readable without wasting space */
+    a {
+        color: #000 !important;
+        text-decoration: none !important;
+    }
+
+    /* Keep the header intact; let everything else flow */
+    .cv-header {
+        page-break-inside: avoid;
+        break-inside: avoid;
+    }
+
+    h1, h2, h3 {
+        page-break-after: avoid;
     }
 }
